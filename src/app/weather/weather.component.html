@@ -1,0 +1,15 @@
+<table>
+    
+        <td>State ID</td>
+        <td>State Name</td>
+        <td>Temp (°C)</td>
+        <td>Temp (°F)</td>
+
+        <tr *ngFor="let data of weatherData;let i=index">
+            <td>{{i}}</td>
+            <td>{{data.state}}</td>
+            <td>{{data.temperature_c}}</td>
+            <td>{{data.temperature_f}}</td>
+        </tr>
+    
+</table>
